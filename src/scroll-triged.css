@@ -1,0 +1,67 @@
+.container > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    pointer-events: none;
+    
+    text-transform: uppercase;
+}
+
+
+.slopeBegin {
+    background: rgb(0, 0, 27);
+   
+    clip-path: polygon(20% 0, 70% 0, 50% 100%, 0% 100%);
+  }
+  
+  .slopeEnd {
+    clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
+  }
+  
+  .slopeBegin,
+  .slopeEnd {
+    position: absolute;
+    width: 170%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .green {
+    background: linear-gradient(to right, #ffffff 0%, #88ffd1 100%);
+  }
+
+  .yellow {
+    background: linear-gradient(to right, #ffffff 0%, #d7ff67 100%);
+  }
+
+  .blue {
+    background: linear-gradient(to right, #ffffff 0%, #00075f 100%);
+  }
+
+  .containerImagensProjetos{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .imgProjeto{
+    width: 900px;
+    border-radius: 10px;
+  }
+
+  
+@media screen and (max-width: 950px) {
+  .imgProjeto{
+    width: 500px;
+  }
+} 
