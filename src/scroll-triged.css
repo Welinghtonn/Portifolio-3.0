@@ -30,15 +30,15 @@
   }
   
   .green {
-    background: linear-gradient(to right, #ffffff 0%, #88ffd1 100%);
+    background:#00001b;
   }
 
   .yellow {
-    background: linear-gradient(to right, #ffffff 0%, #d7ff67 100%);
+    background:#00001b;
   }
 
   .blue {
-    background: linear-gradient(to right, #ffffff 0%, #00075f 100%);
+    background:#00001B;
   }
 
   .containerImagensProjetos{
@@ -65,3 +65,23 @@
     width: 500px;
   }
 } 
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.page {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+}
